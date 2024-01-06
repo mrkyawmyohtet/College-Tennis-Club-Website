@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+.logo{
+    width: 200px;
+    height: 80px;
+    background-image: url("../photos/TMC-Logo4-e1479261887399.png");
+    background-position: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.navigation a{
+    padding: 10px;
+    text-decoration: none;
+    font-family: Nato Sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation a:hover{
+    background-color: #f74d61;
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.7em;
+    color: #fff;
+}
+
+.navigation a:nth-child(4){
+    background-color: rgb(255, 217, 0);
+    border-radius: 0.7em;
+    box-shadow: 0 0 10px yellow;
+    color: black;
+    font-size: 10pt;
+}
+
+.navigation a:nth-child(4):hover{
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+
+hr{
+    width: 80%;
+    margin: auto;
+    position: sticky;
+    z-index: 100;
+    top: 80px;
+}
+
+.first{
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5em;
+    background-color: inherit;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgb(0 0 0);
+}
+
+.first h1{
+    background-color: #f74d61;
+    height: 60px;
+    text-align: center;
+    width: 100%;
+    color: rgb(255 255 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.first img{  
+    width: 600px;
+    height: 300px;
+    background-size: contain;
+}
+
+figure{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;;
+}
+
+figcaption{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first p{
+    padding: 20px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.first ul{
+    padding: 0 40px 0 40px;
+}
+
+.first li{
+    padding: 10px 0 10px 0;
+}
+
+.second{
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5em;
+    background-color: inherit;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgb(0 0 0);
+}
+
+.second hr{
+    border: 1px solid;
+}
+
+.second h1{
+    background-color: #f74d61;
+    height: 60px;
+    text-align: center;
+    width: 100%;
+    color: rgb(255 255 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.second span{    
+    padding: 50px;
+}
+
+/*.second img{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}*/
+
+.mem1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.mem1 figure{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.mem1 p{
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    border-left: 3px solid #f74d61;
+    margin-left: 10px;
+}
+
+.mem2{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.mem2 figure{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.mem2 p{
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    border-right: 3px solid #f74d61;
+    margin-right: 10px;
+}
+
+.mem3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.mem3 figure{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.mem3 p{
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    border-left: 3px solid #f74d61;
+    margin-left: 10px;
+}
+
+.mem4{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.mem4 figure{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.mem4 p{
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    border-right: 3px solid #f74d61;
+    margin-right: 10px;
+}
+
+.mem5{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.mem5 figure{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 10px; 
+}
+
+.mem5 p{
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    border-left: 3px solid #f74d61;
+    margin-left: 10px;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 100;
+    height: 100px;           
+}
+
+footer img{
+    width: 200px;
+    height: auto;
+}
+
+footer p{
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+footer .name{
+    font-size: 10px;
+
+}

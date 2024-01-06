@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 200px;
+    height: 80px;
+    background-image: url("TMC-Logo4-e1479261887399.png");
+    background-position: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.nav a{
+    padding: 10px;
+    text-decoration: none;
+    font-family: Nato Sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover{
+    background-color: #f74d61;
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.7em;
+    color: #fff;
+}
+
+.nav a:nth-child(5){
+    background-color: rgb(255, 217, 0);
+    border-radius: 0.7em;
+    box-shadow: 0 0 10px yellow;
+    color: black;
+    font-size: 10pt;
+}
+
+.nav a:nth-child(5):hover{
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+
+hr{
+    width: 80%;
+    margin: auto;
+    position: sticky;
+    z-index: 100;
+    top: 80px;
+}
+
+.photos{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: #f74d61;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.slideshow{
+    width: 70%;
+    height: 350px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.dot{
+    position: relative;
+    display: inline-block;
+    border: 3px solid;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.prev, .next{
+    border-radius: 0.5em;
+    padding: 15px;
+    position: relative;
+    font-size: 16pt;
+    width: auto;
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.next{
+    right: 300px;
+}
+
+.prev{
+    left: 300px;
+}
+
+.next:hover,
+.prev:hover{
+    background-color: #f74d61;
+}
+
+.slides{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px;
+    display: none;
+    animation: fade 0.6s ease-in-out;
+}
+
+.slides img{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.events{
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*.events table{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 85%;
+    height: auto;
+    border: 1px solid;
+}
+
+.events table th{
+    background-color: #f74d61;
+}*/
+
+.card{
+    display: flex;
+
+}
